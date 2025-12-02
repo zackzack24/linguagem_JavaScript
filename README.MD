@@ -6,12 +6,11 @@
 </p>
 
 
-
 # Breve Resumo de Alguns Conceitos do Java Script 
 <br>
 
 | Tema | Descrição | Exemplos em JavaScript |
-|:------|:-----------|------------------------|
+|:-----------:|:-----------:|:-----------:|
 |[**Number**](1_number/number.js)|Tipo de dados para valores numéricos, tanto inteiros quanto de ponto flutuante.| `let idade = 25;`<br>`let preco = 19.99;`<br>`let temperatura = -5;`|
 |[**Operações Aritméticas**](2_operacao_aritimetica\operacaoAritimetica.js)|Operações matemáticas básicas e avançadas com números.|`let soma = 10 + 5;`<br>`let subtracao = 10 - 5;`<br>`let multiplicacao = 10 * 5;`<br>`let divisao = 10 / 5;`<br>`let resto = 10 % 3;`|
 |[**Números Especiais**](3_numeros_especiais\numerosEspeciais.js)|Valores numéricos especiais que representam conceitos matemáticos ou erros.|`let infinito = Infinity;`<br>`let naoNumero = NaN;`<br>`let infinitoNegativo = -Infinity;`|
@@ -24,9 +23,100 @@
 |[**Operador Ternário**](9_logica_booleana_ternario\logicaBooleanaTernario.js) | Ternário para condições rápidas. | `cond ? valor1 : valor2` |
 |[**Valores Nulos**](10_valores_nulos\valoresNulos.js)|Representam a ausência intencional de valor ou referência vazia. | `let variavelNula = null;`<br>`let variavelIndefinida = undefined;`<br>`let x; // valor é undefined`|
 |[**Conversão Automática**](11_conversão_automática\conversãoAutomática.js)| JavaScript converte automaticamente tipos em operações (coerção de tipos). | `"5" + 1 // "51"`<br>`"5" - 1 // 4`<br>`"5" * "2" // 10`<br>`true + 1 // 2`<br>`false + 1 // 1`<br>`null + 5 // 5`|                                                                                                        ||
-|------------------------------------------------------------------------------------------------------------------------
+<br>
 
+# [**Estruturas de Programação**](12_EstruturasDeProgramação)  
+# O que é um [**Programa**]() um [**Software**]() e um [**Hardware**]() ?
+### Um programa ou software é um conjunto de instruções, dados e programas que dizem a um dispositivo digital o que fazer para realizar tarefas específicas. Diferente do hardware (a parte física), o software é a parte lógica e intangível, que inclui sistemas operacionais, aplicativos e ferramentas de um computador, celular ou outro dispositivo.
+<br>
 
+# Conceitos <br>
+## Instruções: São a base do software. Uma sequência de instruções que diz ao computador como realizar uma tarefa é chamada de programa.
+## Programa: é um conjunto organizado de instruções que dizem ao computador o que fazer, a fim de obter um resultado específico. Essas instruções são escritas em uma linguagem de programação e formam a base de todo o software que utilizamos.
+## Software: refere-se à parte lógica do computador. É o conjunto de instruções, dados e programas que dizem ao hardware o que fazer. O software é intangível; você não pode tocá-lo fisicamente da mesma forma que toca um mouse.
+
+## Hardware: é toda a parte física do computador ou sistema eletrônico. É tudo aquilo que você pode tocar e ver. 
+<br>
+
+# Exemplos de Programas <br>
+## Sistemas Operacionais: Fazem o computador funcionar (ex: Windows, macOS).
+## Aplicativos: Ferramentas que permitem que o usuário realize tarefas específicas, como:
+## Processadores de texto (ex: Microsoft Word).
+## Navegadores de internet (ex: Chrome, Firefox).
+<br>
+
+# Exemplos de Software:
+## Sistemas Operacionais: Windows, macOS, Linux, Android (gerenciam os recursos do hardware).
+## Aplicativos/Programas: Navegadores de internet (Chrome, Firefox), editores de texto (Word, Google Docs), jogos, softwares de edição de imagem.
+## Firmware: Um tipo específico de software de baixo nível que controla dispositivos de hardware básicos (como a BIOS do computador)
+<br>
+
+# Exemplos de Hardware <br>
+## Unidade Central de Processamento (CPU): O "cérebro" do computador.
+## Memória RAM: O local de trabalho temporário do computador.
+## Dispositivos de Armazenamento: Disco rígido (HD), SSD, pen drives.
+## Periféricos de Entrada: Teclado, mouse, microfone, câmera.
+## Periféricos de Saída: Monitor, impressora, alto-falantes. 
+## Placa-mãe: O circuito principal que conecta todos os componentes.
+<br>
+
+# Jogos. <br>
+## Softwares de edição de fotos e vídeos.
+## Ferramentas de IA: Programas de inteligência artificial, como o ChatGPT. 
+<br>
+
+# Em resumo <br>
+## Um programa é um conjunto individual de instruções para uma tarefa.
+## Um software é uma coleção de programas e outros dados que trabalham juntos.
+## Em termos práticos, "programa" e "software" são frequentemente usados de forma intercambiável para se referir a um aplicativo ou sistema que você usa em um dispositivo.  
+
+<br>
+
+# Principais Diferenças de Programa e Software
+
+| Categoria de Análise| Hardware (Physical Layer)| Software (Computer Software)| Programa (Computer Program)|
+|:---:|:---:|:---:|:---:|
+| Definição Básica | Componentes físicos e eletrônicos do computador| Um termo guarda-chuva que inclui o programa principal, dados operacionais e documentação.| Componentes físicos e eletrônicos do computador.
+| Natureza | Tangível (você pode tocar e sentir). | Tangível (você pode tocar e sentir).  | Foco na solução (produto lógico completo).|
+| Foco | Fornecer a capacidade de processamento, armazenamento e interação física. |Solução completa, incluindo design, regras de negócio e usabilidade. | Gerenciar a interação entre o usuário e o hardware de forma útil.|
+| Componentes | Partes físicas do computador, placa-mãe,processador (CPU),memória RAM, dispositivos de armazenamento (HD ou SSD), placa de vídeo (GPU), periféricos de entrada e saída como teclado, mouse, monitor e impressora |Código, scripts, bibliotecas, manuais e outros artefatos de suporte. | Principalmente o código-fonte/executável.|
+| Uso comum | fornecer a base física e tangível que permite o funcionamento de qualquer dispositivo eletrônico, desde um smartphone até um supercomputador. |Termo técnico e jurídico mais formal para se referir ao produto completo. | Muitas vezes usado como sinônimo de software no dia a dia, mas tecnicamente mais específico. |
+| Escopo | Definição do trabalho necessário para entregar um projeto de hardware, incluindo suas metas, resultados, requisitos, limites e restrições |Abrange todos os componentes lógicos necessários para uma solução completa (programas, dados, documentação, etc.). | Restrito ao conjunto de instruções executáveis para uma tarefa. |
+| Componentes Chave | Arquivos executáveis como `.exe` , `.bin`, e scripts interpretáveis.| Executáveis, bibliotecas (DLLs), arquivos de configuração, manuais de usuário, ícones, bases de dados. | Código-fonte e arquivo executável compilado.|
+| Ciclo de Vida | Todas as etapas pelas quais um equipamento passa, desde a sua concepção e aquisição até o descarte, com o objetivo de otimizar seu uso e retorno sobre o investimento | Abrange todo o ciclo: análise de requisitos, design, codificação (programa), teste, implantação e manutenção. | Parte da fase de implementação/codificação do desenvolvimento. |
+| Intenção do Usuário ou Cliente |  Atingir objetivos de negócio através de recursos tecnológicos confiáveis e adequados, como redução de custos, aumento da produtividade, melhora da experiência do usuário e garantia de segurança e conformidade. | Altamente flexível; pode ser modificado, atualizado e integrado com outros sistemas para formar novas soluções. | Menos flexível isoladamente; geralmente projetado para uma função específica.|
+| Exemplo Prático | Um chip de memória RAM ou o processador Intel Core. | O sistema operacional Windows 11 inteiro instalado no computador. | O código do sistema operacional que gerencia a memória RAM.|
+| Perspectiva Jurídica | A perspectiva jurídica do hardware o considera, primariamente, um bem físico ou material, sujeito às leis de propriedade industrial, como patentes, e ao Código de Defesa do Consumidor. Isso contrasta com o software, que é protegido por direitos autorais. | Termo padrão em contratos de Licenciamento de Software, propriedade intelectual e patentes. | Geralmente não é um termo usado em contratos formais de licenciamento.|
+| Dependência | 	Requer software e programas para ser útil. | Depende do hardware para rodar e usa programas como seu núcleo. | Depende do hardware e é parte do software.|
+| Modo de Falha | 		Falha física (quebrou, superaqueceu, curto-circuito). |  Bug lógico (erro na sequência de instruções, crash). | Problema de design, usabilidade ou licenciamento (não atende ao requisito).|
+
+<br>
+
+# Principais Diferenças: Hardware × Software × Programa
+
+| Aspecto | Hardware | Software | Programa |
+|---------|----------|----------|----------|
+| **Definição** | Componentes físicos e tangíveis do sistema computacional | Conjunto completo de componentes lógicos (programas + dados + documentação) | Conjunto específico de instruções para executar uma tarefa |
+| **Natureza** | Tangível (físico) | Intangível (lógico) | Intangível (lógico) |
+| **Exemplo** | Processador, memória RAM, SSD | Windows 11, Pacote Office | Algoritmo de ordenação, driver específico |
+| **Ciclo de Vida** | Fabricação → Uso → Descarte | Análise → Desenvolvimento → Manutenção | Codificação → Compilação → Execução |
+| **Modo de Falha** | Danos físicos (quebra, superaquecimento) | Bugs lógicos, incompatibilidades | Erros no algoritmo, lógica incorreta |
+| **Perspectiva Legal** | Bens materiais (patentes) | Propriedade intelectual (direitos autorais) | Parte integrante do software |
+<br>
+
+## Pontos Relevantes
+
+1. **Hierarquia**: Hardware → Programa → Software → Solução
+2. **Interdependência**: Software precisa de hardware; programas são partes do software
+3. **Escala**: Vários programas compõem um software completo
+4. **Contexto**: No dia a dia, "programa" é usado como sinônimo de "software"
+
+## Analogia
+
+Pense em um restaurante:
+- **Hardware** = Cozinha, fogão, utensílios
+- **Programa** = Receita específica (ex: como fazer molho bechamel)
+- **Software** = Restaurante completo (cardápio, receitas, atendimento, ambiente)
 
 
 
