@@ -24,7 +24,7 @@
 |[**Operador Ternário**](9_logica_booleana_ternario\logicaBooleanaTernario.js) | Ternário para condições rápidas. | `cond ? valor1 : valor2` |
 |[**Valores Nulos**](10_valores_nulos\valoresNulos.js)|Representam a ausência intencional de valor ou referência vazia. | `let variavelNula = null;`<br>`let variavelIndefinida = undefined;`<br>`let x; // valor é undefined`|
 |[**Conversão Automática**](11_conversão_automática\conversãoAutomática.js)| JavaScript converte automaticamente tipos em operações (coerção de tipos). | `"5" + 1 // "51"`<br>`"5" - 1 // 4`<br>`"5" * "2" // 10`<br>`true + 1 // 2`<br>`false + 1 // 1`<br>`null + 5 // 5`|                                                                                                        ||
-
+|------------------------------------------------------------------------------------------------------------------------
 
 
 
