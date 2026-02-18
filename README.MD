@@ -118,8 +118,39 @@ Pense em um restaurante:
 - **Programa** = Receita específica (ex: como fazer molho bechamel)
 - **Software** = Restaurante completo (cardápio, receitas, atendimento, ambiente)
 
+<br>
 
+# Escopo
 
+- Oque acontece dentro de uma função fica separado do **escopo global**.
+- O **escopo global** seria todo o arquivo de Java Script.
+
+```js
+let y = 10;
+function imprimir() { 
+      let y = 150;
+      console.log(y);
+} 
+
+imprimir(); <br>
+
+console.log(y); <br>
+```
+
+- Atualmente com **let e const**, qualquer bloco de código pode separar seu escopo **(um if por exemplo)**.
+- Isso é muito bom pois separa os contextos, com **var** isso não acontece.
+- Podemos ter escopos diferentes não só como **funções**.
+
+```js 
+let x = 10;
+
+if(true) {
+      let x = 20;
+      console.log(x); // escopo if
+}
+
+console.log(x) // escopo global
+```
 
 
 		
