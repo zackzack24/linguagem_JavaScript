@@ -132,9 +132,9 @@ function imprimir() {
       console.log(y);
 } 
 
-imprimir(); <br>
+imprimir(); 
 
-console.log(y); <br>
+console.log(y); 
 ```
 
 - Atualmente com **let e const**, qualquer bloco de código pode separar seu escopo **(um if por exemplo)**.
