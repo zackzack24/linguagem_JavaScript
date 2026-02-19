@@ -252,4 +252,3 @@ nomeComIdade("João", 42);
 nomeComIdade("João");
 ```
 
-## 
