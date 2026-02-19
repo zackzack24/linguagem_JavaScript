@@ -152,14 +152,104 @@ if(true) {
 console.log(x) // escopo global
 ```
 
+# Escopo Aninhado 
 
+- Por causa da possibilidade de criar um escopo, podemos ter mais níveis de escopo
+
+```js
+let y = 5;
+
+const multiplicar = function(n) {
+      let y = n * 2;
+
+      console.log(y) // escopo função 
+
+      if(y == 10) {
+            let y = 55;
+
+            console.log(y) // escopo if dentro da função 
+      }
+
+      console.log(y);
+}
+
+console.log(y);
+```
+```js
+let a = 10;
+
+function multiplicar(x, y) {
+      let a = x * y;
+
+      if(a > 10) {
+            let a = 0;
+
+            console.log(a);
+      }
+
+      console.log(a);
+}
+
+console.log(a);
+multiplicar(3, 7);
+```
+
+# Arrow Function
+
+- Outra forma de escrever funções 
+- Utilizada em Frameworks Modernos
+- Não deve substituir funções por completo 
+
+```js 
+const parOuImpar = (n) => {
+      return n % 2;
+};
+
+console.log(parOuImpar(3));
+
+let consoleTeste = () => {
+      console.log("Olá Mundo!");
+};
+
+consoleTeste();
+
+let soma = (a,b) => {
+      return a + b;
+};
+
+console.log(soma(10,20));
+```	
+
+- Se temos um parâmetro só, podemos remover o parentêses do argumento e do return.
+- Se a expressão for pequena pode até ser feita em uma linha sem prejudicar a
+leitura do código
 		
+```js 
+const raizQuadrada = (x) => {
+      return x * x; 
+}
 
-	
+const raizQuadrada2 = n => n * n;
 
-		
+console.log(raizQuadrada(2));
+console.log(raizQuadrada(16));		
+```
 
+# Arrow Function
 
-		
+- Podemos chamar uma função java script sem o número igual de parâmetros determinados
 
+```js
+function nomeComIdade(nome, idade) {
+      if(idade === undefined) {
+            console.log("Seu nome é" + nome);
+      } else {
+            console.log("Seu nome é" + nome + " e você tem " + idade + "anos");
+      }
+}
 
+nomeComIdade("João", 42);
+nomeComIdade("João");
+```
+
+## 
