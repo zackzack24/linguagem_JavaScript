@@ -235,7 +235,6 @@ console.log(raizQuadrada(2));
 console.log(raizQuadrada(16));		
 ```
 
-# Arrow Function
 
 - Podemos chamar uma função java script sem o número igual de parâmetros determinados
 
