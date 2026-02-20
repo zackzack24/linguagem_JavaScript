@@ -235,6 +235,7 @@ console.log(raizQuadrada(2));
 console.log(raizQuadrada(16));		
 ```
 
+# Argumentos Opcionais
 
 - Podemos chamar uma função java script sem o número igual de parâmetros determinados
 
@@ -249,5 +250,74 @@ function nomeComIdade(nome, idade) {
 
 nomeComIdade("João", 42);
 nomeComIdade("João");
+
+function saudacao(nome, idade) {
+      if(idade === undefined) {
+            console.log("Olá " + nome);
+      } else {
+            console.log("Olá " + nome + " você tem " + idade + " anos");
+      }
+}
+
+saudacao("Mateus");
+
+saudacao("Larissa", 90);
 ```
 
+# Argumentos Com Valor Default
+
+```js
+function repetirFrase(frase, n=2) {
+      for(let x = 1; x <= n; x++) {
+            console.log(frase + "  " + x);
+      }
+}
+
+repetirFrase("Testando", 5);
+repetirFrase("Duas vezes");
+
+// Outro Exemplo
+
+function potencia(base, expoente=2) {
+      return Math.pow(base, expoente);
+}
+
+console.log(potencia(1));
+console.log(potencia(2,4));
+console.log(potencia(5));
+console.log(potencia(7,10));
+```
+
+# Closure
+
+- Função que retorna outra função
+
+```js
+function armazenarSoma(x) {
+      return y => x + y;
+}
+
+let soma1 = armazenarSoma(3);
+console.log(soma1(5)); // 8
+let soma2 = armazenarSoma(5);
+console.log(soma2(10)); // 15 
+
+```
+
+# Recursion
+
+- Uma funcionalidade que permite uma função se chamar novamente
+- Pode ser um problema caso ela se chame muitas vezes 
+
+```js
+function retornarNumeroPar(n) {
+      if(n % 2 == 0) {
+            console.log("n agora é par: " + n);
+      } else {
+            console.log(n);
+            retornarNumeroPar(n - 1);
+      }
+}
+
+retornarNumeroPar(225);
+```

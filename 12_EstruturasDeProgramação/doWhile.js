@@ -1,6 +1,0 @@
-let y = 11;
-
-do {
-    console.log(y);
-    y = y + 1;
-} while (y <= 10);
