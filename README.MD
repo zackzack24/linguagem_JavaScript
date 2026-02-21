@@ -321,3 +321,116 @@ function retornarNumeroPar(n) {
 
 retornarNumeroPar(225);
 ```
+# Objetos e Arrays
+
+## Arrays 
+- Possibilidade de adicionar um conjunto de valores a uma variável
+- Sempre escrito entrre colchetes [] e com valores separados por vírgulas
+
+```js
+let numeros = [1, 2, 3, 4, 5];
+
+let informacoes = ["Nome", "Fulano", "Java-Script", true];
+```
+
+- Podemos acessar um array pelo seu índice, por exemplo arr[1];
+- O primeiro índice de um array sempre é 0.
+
+```js
+let array = [1, 2, 3, 4, 6, 99];
+let linguagens = ["JAVA", "RUBY"];
+let bool = [true, false, 0, 1];
+
+console.log(array[1]);
+console.log(linguagens[1]);
+console.log(bool[bool.length - 1]); // último termo do array
+```
+
+# Propriedades
+- Informações que podem ser verificadas de um valor
+- Quase todos os valores JS têm propriedades, menos null e undefined
+
+```js
+let array = [1, 2, 3, 4, 6, 99];
+let linguagens = ["JAVA", "RUBY"];
+let bool = [true, false, 0, 1];
+
+console.log(array.length);
+console.log(linguagens['length']);
+console.log(bool[bool.length - 1]); // último termo do array
+
+let nome = 'Mateus';
+
+console.log(nome.legth); // Quantidade de Caracteres
+```
+
+# Métodos
+- São propriedades que funcionam como funções
+- Strings e Arrays contém métodos
+
+```js
+let marca = "nike";
+
+console.log(typeof marca.toUpperCase);
+console.log(marca.toUpperCase);
+```
+
+- Diferença entre propriedade e método
+
+### Propriedade
+ - Armazenam dados (características/atributos) de um objeto
+### Método
+ - São funções armazenadas como propriedades, definindo o comportamento (ações) do objeto
+```js
+// string.propriedade
+
+// string.metodo()
+```
+
+# Objetos
+
+- Coleção de propriedades
+```js
+let pessoa = {
+      nome: "Matheus",
+      profissao: "Programador",
+      idade: 28,
+}
+
+console.log(pessoa.nome);
+console.log(pessoa.idade);
+```
+
+## Deletando e criando propriedade
+- Podemos adicionar e deletar propriedades ao longo do código
+```js
+let carro = {
+      marca: "Fiat",
+      portas: 4,
+      eletrico: false,
+      motor: 1.0
+}
+
+console.log(carro.portas);
+
+delete carro.portas;
+
+console.log(carro.portas);
+
+carro.tetoSolar = true;
+
+console.log(carro.tetoSolar);
+```
+## Copiando Objetos
+- Podemos copiar todas as propriedades de um objeto para outro
+
+```js
+let objetoA = {
+      prop1: 'teste',
+      prop2: 'testando',
+}
+
+let objetoB = {
+      prop3 = 'propriedeade',
+}
+```
