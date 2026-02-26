@@ -536,3 +536,100 @@ let frutaRemovida = frutas.shift();
 console.log(frutas);
 console.log(frutRemovida);
 ```
+## indexOf e lastIndexOf
+- IndexOf: encontra o índice de um determinado elemento;
+- lastIndexOf: encontra o último índice de um elemento;
+
+```js 
+let numeros = [0, 2, 4, 6, 21];
+
+console.log(numeros.indexOf(1));
+console.log(numeros.lastIndexOf(1));
+```
+
+## Slice
+- Retorna um array a partir de outro array
+- O array retornado é determinado pelos parâmetros que são os índices de início e fim do novo array
+```js 
+let numeros = [0, 2, 4, 6, 21];
+
+console.log(numeros.slice(2, 1));
+console.log(numeros.slice(4));
+```
+
+## forEach
+- Vai iterar cada elemento do array
+```js 
+const numeros = [0, 2, 4, 6, 21];
+
+numeros.forEach(num => {
+  console.log(num);
+});
+```
+
+## Includes
+- verificar se um array tem determinado elemento
+```js
+let carros = ["BMW", "FIAT", "AUDI"];
+
+console.log(carros.includes("FIAT"));
+```
+
+## Trim
+- Remove tudo que não é string
+```js
+let texto = "      \n teste \n        ";
+
+console.log(texto.trim());
+```
+
+## PadStart
+- Inserir caracteres antes da string;
+```js
+let milAoContrario = "1";
+
+console.log(milAoContrario.padStart());
+```
+
+## Split
+- Divide uma string por um separador, e retorna um array
+```js
+let frase = "O rato roeu a roupa do rei de Roma";
+
+let palavras = frase.split(" ");
+
+console.log(palavras);
+```
+
+## Join
+- Junta elementos em um arrau-y em uma frase, por meio de um separado
+```js
+let frase = "Testando o metodo join";
+let palavras = frase.split(" ");
+
+let novaFrase = palavras.join("@");
+
+console.log(novaFrase);
+
+console.log(palavras.join(" "));
+```
+
+## Repeat
+- Repete uma string de acordo com um parâmetro number
+```js
+console.log("teste".repeat(5));
+```
+
+## Rest Operator
+- Um forma de uma função receber indefinidos parâmetros
+- O operador rest vai virar um array
+- O parâmetro é definido por: ...nome
+
+```js
+function imprimirNumeros(...args) {
+  for(let i = 0; i < args.length; i++) {
+    console.log(args[i]);
+  }
+}
+```
+
