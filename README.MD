@@ -3,6 +3,7 @@
 
 <p align="center">
 <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
+<h6 align="center"> obs: alguns tópicos são clicáveis e mandam direto para a documentação do assunto a que eles se referem. </h6>
 </p>
 
 # Breve Resumo de Alguns Conceitos do Java Script
@@ -10,7 +11,7 @@
 <br>
 
 |                                       Tema                                        |                                               Descrição                                                |                                                                              Exemplos em JavaScript                                                                               |
-| :-------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | 
+| :-------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                         [**Number**](1_number/number.js)                          |            Tipo de dados para valores numéricos, tanto inteiros quanto de ponto flutuante.             |                                                       `let idade = 25;`<br>`let preco = 19.99;`<br>`let temperatura = -5;`                                                        |
 |    [**Operações Aritméticas**](2_operacao_aritimetica\operacaoAritimetica.js)     |                         Operações matemáticas básicas e avançadas com números.                         |                      `let soma = 10 + 5;`<br>`let subtracao = 10 - 5;`<br>`let multiplicacao = 10 * 5;`<br>`let divisao = 10 / 5;`<br>`let resto = 10 % 3;`                       |
 |         [**Números Especiais**](3_numeros_especiais\numerosEspeciais.js)          |              Valores numéricos especiais que representam conceitos matemáticos ou erros.               |                                            `let infinito = Infinity;`<br>`let naoNumero = NaN;`<br>`let infinitoNegativo = -Infinity;`                                            |
@@ -22,7 +23,7 @@
 | [**Estruturas de Repetição**](8_estruturas_de_repetição\estruturasDeRepetição.js) |                           Controlam a execução repetida de blocos de código.                           | `for (let i = 0; i < 5; i++) { console.log(i); }`<br>`while (condicao) { /* código */ }`<br>`do { /* código */ } while (condicao);`<br>`for (let item of array) { /* código */ }` |
 |   [**Operador Ternário**](9_logica_booleana_ternario\logicaBooleanaTernario.js)   |                                    Ternário para condições rápidas.                                    |                                                                             `cond ? valor1 : valor2`                                                                              |
 |               [**Valores Nulos**](10_valores_nulos\valoresNulos.js)               |                    Representam a ausência intencional de valor ou referência vazia.                    |                                       `let variavelNula = null;`<br>`let variavelIndefinida = undefined;`<br>`let x; // valor é undefined`                                        |
-|    [**Conversão Automática**](11_conversão_automática\conversãoAutomática.js)     |               JavaScript converte automaticamente tipos em operações (coerção de tipos).               |                                `"5" + 1 // "51"`<br>`"5" - 1 // 4`<br>`"5" * "2" // 10`<br>`true + 1 // 2`<br>`false + 1 // 1`<br>`null + 5 // 5`                                 |     
+|    [**Conversão Automática**](11_conversão_automática\conversãoAutomática.js)     |               JavaScript converte automaticamente tipos em operações (coerção de tipos).               |                                `"5" + 1 // "51"`<br>`"5" - 1 // 4`<br>`"5" * "2" // 10`<br>`true + 1 // 2`<br>`false + 1 // 1`<br>`null + 5 // 5`                                 |
 
 <br>
 
@@ -485,15 +486,14 @@ let objetoB = {
 - Um objeto pode herdar todas as características de outro, virando uma referência a ele.
 
 ```js
-
 let objetoA = {
-      pontos: 10
+  pontos: 10,
 };
 
 objetoB = objetoA;
 
 let objetoC = {
-      pontos: 10
+  pontos: 10,
 };
 
 console.log(objetoA == objetoB); // true
@@ -506,13 +506,17 @@ console.log(objetoA == objetoC); // false
 - Como pe uma lista de muitos valores, precisamos ver cada um deles
 
 ```js
-let numeros = [1,5,20,25,24];
+let numeros = [1, 5, 20, 25, 24];
 
-for(let i = 0; i <= numeros.length; i++) {
-      console.log(numeros[i]);
+for (let i = 0; i <= numeros.length; i++) {
+  console.log(numeros[i]);
 }
 ```
+
 ## Push & Pop
+
+- Push serve para adicionarmos elementos ao array
+- Pop serve para removermos elementos do array
 
 ```js
 let pessoas = ["Matheus", "João", "Ricardo"];
@@ -525,6 +529,7 @@ console.log(pessoaRemovida);
 ```
 
 ## Shift & Unshift
+
 - Remove o primeiro elemento de um array
 - Unshift adiciona um ou mais elementos no início de um array
 
@@ -536,11 +541,13 @@ let frutaRemovida = frutas.shift();
 console.log(frutas);
 console.log(frutRemovida);
 ```
+
 ## indexOf e lastIndexOf
+
 - IndexOf: encontra o índice de um determinado elemento;
 - lastIndexOf: encontra o último índice de um elemento;
 
-```js 
+```js
 let numeros = [0, 2, 4, 6, 21];
 
 console.log(numeros.indexOf(1));
@@ -548,9 +555,11 @@ console.log(numeros.lastIndexOf(1));
 ```
 
 ## Slice
+
 - Retorna um array a partir de outro array
 - O array retornado é determinado pelos parâmetros que são os índices de início e fim do novo array
-```js 
+
+```js
 let numeros = [0, 2, 4, 6, 21];
 
 console.log(numeros.slice(2, 1));
@@ -558,17 +567,21 @@ console.log(numeros.slice(4));
 ```
 
 ## forEach
+
 - Vai iterar cada elemento do array
-```js 
+
+```js
 const numeros = [0, 2, 4, 6, 21];
 
-numeros.forEach(num => {
+numeros.forEach((num) => {
   console.log(num);
 });
 ```
 
 ## Includes
+
 - verificar se um array tem determinado elemento
+
 ```js
 let carros = ["BMW", "FIAT", "AUDI"];
 
@@ -576,7 +589,9 @@ console.log(carros.includes("FIAT"));
 ```
 
 ## Trim
+
 - Remove tudo que não é string
+
 ```js
 let texto = "      \n teste \n        ";
 
@@ -584,7 +599,9 @@ console.log(texto.trim());
 ```
 
 ## PadStart
+
 - Inserir caracteres antes da string;
+
 ```js
 let milAoContrario = "1";
 
@@ -592,7 +609,9 @@ console.log(milAoContrario.padStart());
 ```
 
 ## Split
+
 - Divide uma string por um separador, e retorna um array
+
 ```js
 let frase = "O rato roeu a roupa do rei de Roma";
 
@@ -602,7 +621,9 @@ console.log(palavras);
 ```
 
 ## Join
+
 - Junta elementos em um arrau-y em uma frase, por meio de um separado
+
 ```js
 let frase = "Testando o metodo join";
 let palavras = frase.split(" ");
@@ -615,21 +636,109 @@ console.log(palavras.join(" "));
 ```
 
 ## Repeat
+
 - Repete uma string de acordo com um parâmetro number
+
 ```js
 console.log("teste".repeat(5));
 ```
 
 ## Rest Operator
+
 - Um forma de uma função receber indefinidos parâmetros
 - O operador rest vai virar um array
-- O parâmetro é definido por: ...nome
+- O parâmetro é definido por: ..."nome" (sem aspas)
 
 ```js
 function imprimirNumeros(...args) {
-  for(let i = 0; i < args.length; i++) {
+  for (let i = 0; i < args.length; i++) {
     console.log(args[i]);
   }
 }
 ```
 
+## Destructuring
+
+- Podemos Definir variáveis com propriedades de objeto com uma notação diferente, chamada destructuring;
+
+```js
+const person = {
+  name: "jhon",
+  lastname: "Doe",
+};
+
+const { name: fname, lastname: lname } = person;
+
+console.log(fname);
+console.log(lname);
+```
+
+## Destructuring Com Array
+
+- Podemos Definir variáveis com os valores de um array utilizando o destructuring;
+
+```js
+let nomes = ["Mateus", "João", "Pedro"];
+
+let [nomeA, nomeB, nomeC] = nomes;
+
+console.log(nomeA);
+console.log(nomeB);
+console.log(nomeC);
+```
+
+# [JSON](https://www.json.org/json-en.html), [JavaScript Object Notation](https://www.json.org/json-en.html)
+
+- Utilizado para comunicação entre serviços como back end <-> front end
+- Tipo de dado padronizado que lembra os objetos do java script
+
+```json
+{
+  "name": "Mateus",
+  "age": 29,
+  "position": "Developer",
+  "languages": ["PHP", "JAVA SCRIPT", "PYTHON"]
+}
+```
+
+- Estrutura rigorosa, com padrão bem fixado
+- Apenas aspas duplas
+- Não aceita comentários
+
+- Podemos conversert JSON para STRING de forma fácil
+
+```js
+const car = {
+  brand: "BMW",
+  wheels: 4,
+  doors: 4,
+  type: "SUV",
+};
+
+let jsonToString = JSON.stringfy(car);
+
+console.log(jsonToString);
+
+// Resultado =
+```
+
+- Ou também uma string para json
+
+```js
+let pessoa = {
+  name: "Mateus",
+  age: 29,
+  position: "Developer",
+  hobbies: ["Desenvolver", "Estudar", "Correr"],
+};
+
+let pessoaToString = JSON.stringify(pessoa);
+
+console.log(pessoaJson);
+
+// converte json para string
+
+let pessoaToJson = JSON.parse(pessoaToString);
+console.log(pessoaToJson);
+// volta a ser JSON
+```
