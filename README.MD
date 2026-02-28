@@ -691,6 +691,11 @@ console.log(nomeC);
 
 - Utilizado para comunicação entre serviços como back end <-> front end
 - Tipo de dado padronizado que lembra os objetos do java script
+### Regras de Ouro para JSON
+- Aspas Duplas: Apenas aspas duplas " são válidas para chaves e strings. Aspas simples ' causam erro.
+- Vírgulas: Use vírgulas para separar pares chave/valor e elementos de array, mas não coloque vírgula após o último item.
+- Estrutura: Objeto começa com { e termina com }, array começa com [ e termina com ].
+- Validação: Use ferramentas como [JSONLint](https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/JSON) ou validadores online para garantir a sintaxe correta.
 
 ```json
 {
