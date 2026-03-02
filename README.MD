@@ -13,93 +13,103 @@
 |                                       Tema                                        |                                               Descrição                                                |                                                                              Exemplos em JavaScript                                                                               |
 | :-------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                         [**Number**](1_number/number.js)                          |            Tipo de dados para valores numéricos, tanto inteiros quanto de ponto flutuante.             |                                                       `let idade = 25;`<br>`let preco = 19.99;`<br>`let temperatura = -5;`                                                        |
-|    [**Operações Aritméticas**](2_operacao_aritimetica\operacaoAritimetica.js)     |                         Operações matemáticas básicas e avançadas com números.                         |                      `let soma = 10 + 5;`<br>`let subtracao = 10 - 5;`<br>`let multiplicacao = 10 * 5;`<br>`let divisao = 10 / 5;`<br>`let resto = 10 % 3;`                       |
-|         [**Números Especiais**](3_numeros_especiais\numerosEspeciais.js)          |              Valores numéricos especiais que representam conceitos matemáticos ou erros.               |                                            `let infinito = Infinity;`<br>`let naoNumero = NaN;`<br>`let infinitoNegativo = -Infinity;`                                            |
+|    [**Operações Aritméticas**](2_operacaoAritimetica\operacaoAritimetica.js)     |                         Operações matemáticas básicas e avançadas com números.                         |                      `let soma = 10 + 5;`<br>`let subtracao = 10 - 5;`<br>`let multiplicacao = 10 * 5;`<br>`let divisao = 10 / 5;`<br>`let resto = 10 % 3;`                       |
+|         [**Números Especiais**](3_numerosEspeciais\numerosEspeciais.js)          |              Valores numéricos especiais que representam conceitos matemáticos ou erros.               |                                            `let infinito = Infinity;`<br>`let naoNumero = NaN;`<br>`let infinitoNegativo = -Infinity;`                                            |
 |                         [**Strings**](4_string\string.js)                         | Sequência de caracteres usada para representar texto. Delimitadas por aspas simples, duplas ou crases. |                          `let nome = "João"; `<br>` let sobrenome = 'Silva';`<br>`let template = Olá, ${nome}!; `<br>` let frase = "Ele disse: 'Olá!'";`                          |
-|         [**Strings Avançados**](5_strings_avancados/stringsAvancados.js)          |                                     Manipulação avançada de texto.                                     |                                                                       `nome.length`<br>`nome.toUpperCase()`                                                                       |
+|         [**Strings Avançados**](5_stringsAvancados\stringsAvancados.js)          |                                     Manipulação avançada de texto.                                     |                                                                       `nome.length`<br>`nome.toUpperCase()`                                                                       |
 |                        [**Boolean**](6_boolean\boolean.js)                        |                   Tipo de dados que representa valores lógicos: verdadeiro ou falso.                   |                              `let ativo = true;`<br>`let desligado = false;`<br>`let maior = 10 > 5; // true`<br>`let igual = 10 === "10"; // false`                              |
-|   [**Comparações Booleanas**](7_comparacoes_booleanas\comparacoesBooleanas.js)    |                                  Comparações avançadas com booleanos.                                  |                                                                           `10 === "10"`<br>`10 == "10"`                                                                           |
+|   [**Comparações Booleanas**](6_boolean\index.html)    |                                  Comparações avançadas com booleanos.                                  |                                                                           `10 === "10"`<br>`10 == "10"`                                                                           |
 |            [**Lógica Booleana**](8_logica_booleana\logicaBooleana.js)             |                                             AND, OR e NOT.                                             |                                                                `true && false` `<br>` `true  false` `<br>` `!true`                                                                |
 | [**Estruturas de Repetição**](8_estruturas_de_repetição\estruturasDeRepetição.js) |                           Controlam a execução repetida de blocos de código.                           | `for (let i = 0; i < 5; i++) { console.log(i); }`<br>`while (condicao) { /* código */ }`<br>`do { /* código */ } while (condicao);`<br>`for (let item of array) { /* código */ }` |
-|   [**Operador Ternário**](9_logica_booleana_ternario\logicaBooleanaTernario.js)   |                                    Ternário para condições rápidas.                                    |                                                                             `cond ? valor1 : valor2`                                                                              |
-|               [**Valores Nulos**](10_valores_nulos\valoresNulos.js)               |                    Representam a ausência intencional de valor ou referência vazia.                    |                                       `let variavelNula = null;`<br>`let variavelIndefinida = undefined;`<br>`let x; // valor é undefined`                                        |
-|    [**Conversão Automática**](11_conversão_automática\conversãoAutomática.js)     |               JavaScript converte automaticamente tipos em operações (coerção de tipos).               |                                `"5" + 1 // "51"`<br>`"5" - 1 // 4`<br>`"5" * "2" // 10`<br>`true + 1 // 2`<br>`false + 1 // 1`<br>`null + 5 // 5`                                 |
+|   [**Operador Ternário**](9_logicaBooleanaTernario\logicaBooleanaTernario.js)   |                                    Ternário para condições rápidas.                                    |                                                                             `cond ? valor1 : valor2`                                                                              |
+|               [**Valores Nulos**](10_valoresNulos\valoresNulos.js)               |                    Representam a ausência intencional de valor ou referência vazia.                    |                                       `let variavelNula = null;`<br>`let variavelIndefinida = undefined;`<br>`let x; // valor é undefined`                                        |
+|    [**Conversão Automática**](11_conversaoAutomatica\conversãoAutomatica.js)     |               JavaScript converte automaticamente tipos em operações (coerção de tipos).               |                                `"5" + 1 // "51"`<br>`"5" - 1 // 4`<br>`"5" * "2" // 10`<br>`true + 1 // 2`<br>`false + 1 // 1`<br>`null + 5 // 5`                                 |
 
 <br>
 
-# [**Estruturas de Programação**](12_EstruturasDeProgramação)
+# [**Estruturas de Programação**](12_EstruturasDeProgramacao)
 
-# O que é um [**Programa**]() um [**Software**]() e um [**Hardware**]() ?
+# O que é um [**Programa**](https://www.lenovo.com/br/pt/glossary/program/?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOorvJZSNoOzhu96MDyhfkGkmtvLOd2YJ5uzvKhvJVeo9Ld6PDVyo) um [**Software**](https://www.lenovo.com/br/pt/glossary/program/?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOorvJZSNoOzhu96MDyhfkGkmtvLOd2YJ5uzvKhvJVeo9Ld6PDVyo) e um [**Hardware**](https://www.lenovo.com/br/pt/glossary/program/?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOorvJZSNoOzhu96MDyhfkGkmtvLOd2YJ5uzvKhvJVeo9Ld6PDVyo) ?
 
-### Um programa ou software é um conjunto de instruções, dados e programas que dizem a um dispositivo digital o que fazer para realizar tarefas específicas. Diferente do hardware (a parte física), o software é a parte lógica e intangível, que inclui sistemas operacionais, aplicativos e ferramentas de um computador, celular ou outro dispositivo.
+- Um programa ou software é um conjunto de instruções, dados e programas que dizem a um dispositivo digital o que fazer para realizar tarefas específicas. Diferente do hardware (a parte física), o software é a parte lógica e intangível, que inclui sistemas operacionais, aplicativos e ferramentas de um computador, celular ou outro dispositivo.
 
 <br>
 
 # Conceitos <br>
 
-## Instruções: São a base do software. Uma sequência de instruções que diz ao computador como realizar uma tarefa é chamada de programa.
+- Instruções: São a base do software. Uma sequência de instruções que diz ao computador como realizar uma tarefa é chamada de programa.
 
-## Programa: é um conjunto organizado de instruções que dizem ao computador o que fazer, a fim de obter um resultado específico. Essas instruções são escritas em uma linguagem de programação e formam a base de todo o software que utilizamos.
+- Programa: é um conjunto organizado de instruções que dizem ao computador o que fazer, a fim de obter um resultado específico. Essas instruções são escritas em uma linguagem de programação e formam a base de todo o software que utilizamos.
 
-## Software: refere-se à parte lógica do computador. É o conjunto de instruções, dados e programas que dizem ao hardware o que fazer. O software é intangível; você não pode tocá-lo fisicamente da mesma forma que toca um mouse.
+- Software: refere-se à parte lógica do computador. É o conjunto de instruções, dados e programas que dizem ao hardware o que fazer. O software é intangível; você não pode tocá-lo fisicamente da mesma forma que toca um mouse.
 
-## Hardware: é toda a parte física do computador ou sistema eletrônico. É tudo aquilo que você pode tocar e ver.
-
-<br>
-
-# Exemplos de Programas <br>
-
-## Sistemas Operacionais: Fazem o computador funcionar (ex: Windows, macOS).
-
-## Aplicativos: Ferramentas que permitem que o usuário realize tarefas específicas, como:
-
-## Processadores de texto (ex: Microsoft Word).
-
-## Navegadores de internet (ex: Chrome, Firefox).
+- Hardware: é toda a parte física do computador ou sistema eletrônico. É tudo aquilo que você pode tocar e ver.
 
 <br>
 
-# Exemplos de Software:
+# Exemplos de Programas 
 
-## Sistemas Operacionais: Windows, macOS, Linux, Android (gerenciam os recursos do hardware).
+## Sistemas Operacionais 
 
-## Aplicativos/Programas: Navegadores de internet (Chrome, Firefox), editores de texto (Word, Google Docs), jogos, softwares de edição de imagem.
+- Fazem o computador funcionar (ex: Windows, macOS).
 
-## Firmware: Um tipo específico de software de baixo nível que controla dispositivos de hardware básicos (como a BIOS do computador)
+## Aplicativos 
+
+- Ferramentas que permitem que o usuário realize tarefas específicas, como:
+
+- Processadores de texto (ex: Microsoft Word).
+
+- Navegadores de internet (ex: Chrome, Firefox).
+
+<br>
+
+# Exemplos de Software
+
+## Sistemas Operacionais 
+
+- Windows, macOS, Linux, Android (gerenciam os recursos do hardware).
+
+## Aplicativos/Programas 
+
+- Navegadores de internet (Chrome, Firefox), editores de texto (Word, Google Docs), jogos, softwares de edição de imagem.
+
+## [Firmware](https://tecnoblog.net/responde/o-que-e-firmware/): 
+
+- Um tipo específico de software de baixo nível que controla dispositivos de hardware básicos (como a BIOS do computador)
 
 <br>
 
 # Exemplos de Hardware <br>
 
-## Unidade Central de Processamento (CPU): O "cérebro" do computador.
+- Unidade Central de Processamento (CPU): O "cérebro" do computador.
 
-## Memória RAM: O local de trabalho temporário do computador.
+- Memória RAM: O local de trabalho temporário do computador.
 
-## Dispositivos de Armazenamento: Disco rígido (HD), SSD, pen drives.
+- Dispositivos de Armazenamento: Disco rígido (HD), SSD, pen drives.
 
-## Periféricos de Entrada: Teclado, mouse, microfone, câmera.
+- Periféricos de Entrada: Teclado, mouse, microfone, câmera.
 
-## Periféricos de Saída: Monitor, impressora, alto-falantes.
+- Periféricos de Saída: Monitor, impressora, alto-falantes.
 
-## Placa-mãe: O circuito principal que conecta todos os componentes.
-
-<br>
-
-# Jogos. <br>
-
-## Softwares de edição de fotos e vídeos.
-
-## Ferramentas de IA: Programas de inteligência artificial, como o ChatGPT.
+- Placa-mãe: O circuito principal que conecta todos os componentes.
 
 <br>
 
-# Em resumo <br>
+# Jogos
 
-## Um programa é um conjunto individual de instruções para uma tarefa.
+- Softwares de edição de fotos e vídeos.
 
-## Um software é uma coleção de programas e outros dados que trabalham juntos.
+- Ferramentas de IA: Programas de inteligência artificial, como o ChatGPT.
 
-## Em termos práticos, "programa" e "software" são frequentemente usados de forma intercambiável para se referir a um aplicativo ou sistema que você usa em um dispositivo.
+<br>
+
+# Em resumo 
+
+- Um programa é um conjunto individual de instruções para uma tarefa.
+
+- Um software é uma coleção de programas e outros dados que trabalham juntos.
+
+- Em termos práticos, "programa" e "software" são frequentemente usados de forma intercambiável para se referir a um aplicativo ou sistema que você usa em um dispositivo.
 
 <br>
 
@@ -153,7 +163,7 @@ Pense em um restaurante:
 
 <br>
 
-# Escopo
+# [Escopo](https://developer.mozilla.org/pt-BR/docs/Glossary/Scope)
 
 - Oque acontece dentro de uma função fica separado do **escopo global**.
 - O **escopo global** seria todo o arquivo de Java Script.
@@ -185,7 +195,7 @@ if (true) {
 console.log(x); // escopo global
 ```
 
-# Escopo Aninhado
+# [Escopo Aninhado](https://developer.mozilla.org/pt-BR/docs/Glossary/Scope)
 
 - Por causa da possibilidade de criar um escopo, podemos ter mais níveis de escopo
 
@@ -228,7 +238,7 @@ console.log(a);
 multiplicar(3, 7);
 ```
 
-# Arrow Function
+# [Arrow Function](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 - Outra forma de escrever funções
 - Utilizada em Frameworks Modernos
@@ -269,7 +279,7 @@ console.log(raizQuadrada(2));
 console.log(raizQuadrada(16));
 ```
 
-# Argumentos Opcionais
+# [Argumentos Opcionais](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/arguments)
 
 - Podemos chamar uma função java script sem o número igual de parâmetros determinados
 
@@ -322,7 +332,7 @@ console.log(potencia(5));
 console.log(potencia(7, 10));
 ```
 
-# Closure
+# [Closure](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures)
 
 - Função que retorna outra função
 
@@ -337,7 +347,7 @@ let soma2 = armazenarSoma(5);
 console.log(soma2(10)); // 15
 ```
 
-# Recursion
+# [Recursion](https://developer.mozilla.org/pt-BR/docs/Glossary/Recursion)
 
 - Uma funcionalidade que permite uma função se chamar novamente
 - Pode ser um problema caso ela se chame muitas vezes
@@ -357,10 +367,10 @@ retornarNumeroPar(225);
 
 # Objetos e Arrays
 
-## Arrays
+## [Arrays](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 - Possibilidade de adicionar um conjunto de valores a uma variável
-- Sempre escrito entrre colchetes [] e com valores separados por vírgulas
+- Sempre escrito entrre colchetes "[ ]" e com valores separados por vírgulas
 
 ```js
 let numeros = [1, 2, 3, 4, 5];
@@ -381,7 +391,7 @@ console.log(linguagens[1]);
 console.log(bool[bool.length - 1]); // último termo do array
 ```
 
-# Propriedades
+# [Propriedades](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 - Informações que podem ser verificadas de um valor
 - Quase todos os valores JS têm propriedades, menos null e undefined
@@ -400,7 +410,7 @@ let nome = "Mateus";
 console.log(nome.legth); // Quantidade de Caracteres
 ```
 
-# Métodos
+# [Métodos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Method_definitions)
 
 - São propriedades que funcionam como funções
 - Strings e Arrays contém métodos
@@ -428,7 +438,7 @@ console.log(marca.toUpperCase);
 // string.metodo()
 ```
 
-# Objetos
+# [Objetos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_objects)
 
 - Coleção de propriedades
 
@@ -481,7 +491,7 @@ let objetoB = {
 }
 ```
 
-## Mutação, Mutability
+## [Mutação, Mutability](https://developer.mozilla.org/pt-BR/docs/Web/API/MutationObserver)
 
 - Um objeto pode herdar todas as características de outro, virando uma referência a ele.
 
@@ -500,7 +510,7 @@ console.log(objetoA == objetoB); // true
 console.log(objetoA == objetoC); // false
 ```
 
-## Loops Em Arrays
+## [Loops Em Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
 - Um técninca muito utilizada na programação
 - Como pe uma lista de muitos valores, precisamos ver cada um deles
@@ -513,7 +523,7 @@ for (let i = 0; i <= numeros.length; i++) {
 }
 ```
 
-## Push & Pop
+## [Push & Pop](https://valchan.com.br/pop-push-shift-unshift/)
 
 - Push serve para adicionarmos elementos ao array
 - Pop serve para removermos elementos do array
@@ -528,7 +538,7 @@ console.log(pessoas);
 console.log(pessoaRemovida);
 ```
 
-## Shift & Unshift
+## [Shift & Unshift](https://valchan.com.br/pop-push-shift-unshift/)
 
 - Remove o primeiro elemento de um array
 - Unshift adiciona um ou mais elementos no início de um array
@@ -542,7 +552,7 @@ console.log(frutas);
 console.log(frutRemovida);
 ```
 
-## indexOf e lastIndexOf
+## [indexOf e lastIndexOf](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf)
 
 - IndexOf: encontra o índice de um determinado elemento;
 - lastIndexOf: encontra o último índice de um elemento;
@@ -554,7 +564,7 @@ console.log(numeros.indexOf(1));
 console.log(numeros.lastIndexOf(1));
 ```
 
-## Slice
+## [Slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
 - Retorna um array a partir de outro array
 - O array retornado é determinado pelos parâmetros que são os índices de início e fim do novo array
@@ -566,7 +576,7 @@ console.log(numeros.slice(2, 1));
 console.log(numeros.slice(4));
 ```
 
-## forEach
+## [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
 - Vai iterar cada elemento do array
 
@@ -578,7 +588,7 @@ numeros.forEach((num) => {
 });
 ```
 
-## Includes
+## [Includes](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 
 - verificar se um array tem determinado elemento
 
@@ -588,7 +598,7 @@ let carros = ["BMW", "FIAT", "AUDI"];
 console.log(carros.includes("FIAT"));
 ```
 
-## Trim
+## [Trim](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
 
 - Remove tudo que não é string
 
@@ -598,7 +608,7 @@ let texto = "      \n teste \n        ";
 console.log(texto.trim());
 ```
 
-## PadStart
+## [PadStart](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
 
 - Inserir caracteres antes da string;
 
@@ -608,7 +618,7 @@ let milAoContrario = "1";
 console.log(milAoContrario.padStart());
 ```
 
-## Split
+## [Split](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
 - Divide uma string por um separador, e retorna um array
 
@@ -620,7 +630,7 @@ let palavras = frase.split(" ");
 console.log(palavras);
 ```
 
-## Join
+## [Join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
 - Junta elementos em um arrau-y em uma frase, por meio de um separado
 
@@ -635,7 +645,7 @@ console.log(novaFrase);
 console.log(palavras.join(" "));
 ```
 
-## Repeat
+## [Repeat](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
 
 - Repete uma string de acordo com um parâmetro number
 
@@ -643,7 +653,7 @@ console.log(palavras.join(" "));
 console.log("teste".repeat(5));
 ```
 
-## Rest Operator
+## [Rest Operator](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 
 - Um forma de uma função receber indefinidos parâmetros
 - O operador rest vai virar um array
@@ -657,7 +667,7 @@ function imprimirNumeros(...args) {
 }
 ```
 
-## Destructuring
+## [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring)
 
 - Podemos Definir variáveis com propriedades de objeto com uma notação diferente, chamada destructuring;
 
@@ -673,7 +683,7 @@ console.log(fname);
 console.log(lname);
 ```
 
-## Destructuring Com Array
+## [Destructuring Com Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring)
 
 - Podemos Definir variáveis com os valores de um array utilizando o destructuring;
 
@@ -691,7 +701,9 @@ console.log(nomeC);
 
 - Utilizado para comunicação entre serviços como back end <-> front end
 - Tipo de dado padronizado que lembra os objetos do java script
+
 ### Regras de Ouro para JSON
+
 - Aspas Duplas: Apenas aspas duplas " são válidas para chaves e strings. Aspas simples ' causam erro.
 - Vírgulas: Use vírgulas para separar pares chave/valor e elementos de array, mas não coloque vírgula após o último item.
 - Estrutura: Objeto começa com { e termina com }, array começa com [ e termina com ].
@@ -746,4 +758,156 @@ console.log(pessoaJson);
 let pessoaToJson = JSON.parse(pessoaToString);
 console.log(pessoaToJson);
 // volta a ser JSON
+```
+
+<p align="center">
+
+# [Orientação a Objetos](https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects) 
+
+- A orientação a objetos é uma forma de programar, que utiliza os objetos como o seu principal principio;
+- Além de utilizar conceitos e técnicas que envolvem objetos;
+- A maioria dos softwares, na parte de back-end, säo desenvolvidos em cima desse paradigma;
+- Grandes frameworks se aproveitam desta técnica: Laravel, Django e etc. (Adicionar Logo do lavarel e django ) // TODO
+
+# [Métodos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Method_definitions) 
+
+- Propriedades que servem como funções, ou seja as açoes dos objetos,
+- invocamos os métodos das mesmas maneiras que as funções
+- Separados por vírgula
+- Não é necessário usar console.log para chamar métodos;
+
+```js
+let cachorro = {
+  latir: function () {
+    console.log("AUAUAUAUA");
+  },
+};
+
+cachorro.latir();
+```
+
+- Normalmente os métodos interagem com os objetos
+- Até mudando os valores das suas propriedades para corresponder a lógica do programa;
+
+```js
+let pessoa = {
+  nome: "",
+  setNome: function (novoNome) {
+    this.nome = novoNome;
+  },
+  getNome: function () {
+    return this.nome;
+  },
+};
+
+pessoa.setNome("Luluzinha");
+console.log(pessoa.getNome());
+```
+
+- utilizando [getters and setters](https://www.devmedia.com.br/javascript-getters-e-setters/41198) 
+
+# [Prototype](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects/Object_prototypes) 
+
+- Um objeto fallback de outro objeto;
+- Quando um objeto recebe uma requisiqäo de uma propriedade que näo tem, ela é procura no prototype deste objeto;
+- O prototype de um objeto criado do zero é o Object, que tem os métodos nativos da linguagem;
+
+```js
+let pessoa = {
+  maos: 2,
+};
+console.log(Object.getPrototypeOf(pessoa));
+console.log(Object.getPrototypeOf(pessoa) == Object.prototype);
+
+console.log(pessoa.hasOwnProperty("maos"));
+```
+
+- Quando criamos um objeto a partir de um outro, o base será o prototype;
+- Ele herdará tanto os métodos e propriedades de Object (o prototype do objeto base);
+- Quanto os do objeto base para este novo;
+
+```js
+let pessoa = {
+  maos: 2,
+};
+
+let pessoaNova = Object.create(pessoa);
+
+console.log(Object.getPrototypeOf(pessoa));
+console.log(Object.getPrototypeOf(pessoa) == Object.prototype);
+
+console.log(pessoa.hasOwnProperty("maos"));
+```
+
+# [Classes](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes)
+
+- O prototype do JavaScript pode ser chamado de classe;
+- Pois nas outras linguagens uma Class(classe) é um molde de um objeto;
+- Ou seja, podemos criar diversos objetos em cima de um prototype;
+
+```js
+let cachorro = {
+  raca: "Sem raça definida",
+};
+
+let pastorAlemao = object.create(cachorro);
+
+pastorAlemao.raca = "Pastor Alemão";
+
+console.log(pastorAlemao.raca);
+```
+
+# [Construtor por função](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes/constructor)
+
+- Construtores são formas de instanciar uma classe em uma linguagem de programação;
+- Instanciar = criar um objeto novo;
+- No construtor já podemos definir propriedades;
+
+```js
+function criarCachorro(raca) {
+  let cachorro = Object.create({});
+  cachorro.raca = raca;
+  return cachorro;
+}
+
+let doberman = criarCachorro("Doberman");
+
+console.log(doberman.raca);
+```
+
+# [Construtor por new](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes/constructor)
+
+- Em muitas linguagens temos a opção de instanciar um objeto com new, também no javascript.
+- Usamos a 1ª letra maiúscula pois é uma convenção.
+
+```js
+function Cachorro(raca) {
+  this.raca = raca;
+}
+
+let husky = new Cachorro("Husky");
+
+console.log(husky.raca);
+```
+
+# [Construtor com método](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes/constructor)
+
+- Além de propriedades, podemos criar a classe base já com métodos;
+- Basta definir ao prototype o método desejado;
+
+```js
+
+function Cachorro(raca) {
+  this.raca = raca;
+}
+
+Cachorro.prototype.uivar = function() {
+  console.log("Auuuuuuuuuuuuu");
+}
+
+let pug = new Cachorro("Pug");
+
+console.log(pug.raca);
+pug.uivar();
+
 ```
