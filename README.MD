@@ -13,17 +13,17 @@
 |                                       Tema                                        |                                               Descrição                                                |                                                                              Exemplos em JavaScript                                                                               |
 | :-------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                         [**Number**](1_number/number.js)                          |            Tipo de dados para valores numéricos, tanto inteiros quanto de ponto flutuante.             |                                                       `let idade = 25;`<br>`let preco = 19.99;`<br>`let temperatura = -5;`                                                        |
-|    [**Operações Aritméticas**](2_operacaoAritimetica\operacaoAritimetica.js)     |                         Operações matemáticas básicas e avançadas com números.                         |                      `let soma = 10 + 5;`<br>`let subtracao = 10 - 5;`<br>`let multiplicacao = 10 * 5;`<br>`let divisao = 10 / 5;`<br>`let resto = 10 % 3;`                       |
-|         [**Números Especiais**](3_numerosEspeciais\numerosEspeciais.js)          |              Valores numéricos especiais que representam conceitos matemáticos ou erros.               |                                            `let infinito = Infinity;`<br>`let naoNumero = NaN;`<br>`let infinitoNegativo = -Infinity;`                                            |
+|     [**Operações Aritméticas**](2_operacaoAritimetica\operacaoAritimetica.js)     |                         Operações matemáticas básicas e avançadas com números.                         |                      `let soma = 10 + 5;`<br>`let subtracao = 10 - 5;`<br>`let multiplicacao = 10 * 5;`<br>`let divisao = 10 / 5;`<br>`let resto = 10 % 3;`                       |
+|          [**Números Especiais**](3_numerosEspeciais\numerosEspeciais.js)          |              Valores numéricos especiais que representam conceitos matemáticos ou erros.               |                                            `let infinito = Infinity;`<br>`let naoNumero = NaN;`<br>`let infinitoNegativo = -Infinity;`                                            |
 |                         [**Strings**](4_string\string.js)                         | Sequência de caracteres usada para representar texto. Delimitadas por aspas simples, duplas ou crases. |                          `let nome = "João"; `<br>` let sobrenome = 'Silva';`<br>`let template = Olá, ${nome}!; `<br>` let frase = "Ele disse: 'Olá!'";`                          |
-|         [**Strings Avançados**](5_stringsAvancados\stringsAvancados.js)          |                                     Manipulação avançada de texto.                                     |                                                                       `nome.length`<br>`nome.toUpperCase()`                                                                       |
+|          [**Strings Avançados**](5_stringsAvancados\stringsAvancados.js)          |                                     Manipulação avançada de texto.                                     |                                                                       `nome.length`<br>`nome.toUpperCase()`                                                                       |
 |                        [**Boolean**](6_boolean\boolean.js)                        |                   Tipo de dados que representa valores lógicos: verdadeiro ou falso.                   |                              `let ativo = true;`<br>`let desligado = false;`<br>`let maior = 10 > 5; // true`<br>`let igual = 10 === "10"; // false`                              |
-|   [**Comparações Booleanas**](6_boolean\index.html)    |                                  Comparações avançadas com booleanos.                                  |                                                                           `10 === "10"`<br>`10 == "10"`                                                                           |
+|                 [**Comparações Booleanas**](6_boolean\index.html)                 |                                  Comparações avançadas com booleanos.                                  |                                                                           `10 === "10"`<br>`10 == "10"`                                                                           |
 |            [**Lógica Booleana**](8_logica_booleana\logicaBooleana.js)             |                                             AND, OR e NOT.                                             |                                                                `true && false` `<br>` `true  false` `<br>` `!true`                                                                |
 | [**Estruturas de Repetição**](8_estruturas_de_repetição\estruturasDeRepetição.js) |                           Controlam a execução repetida de blocos de código.                           | `for (let i = 0; i < 5; i++) { console.log(i); }`<br>`while (condicao) { /* código */ }`<br>`do { /* código */ } while (condicao);`<br>`for (let item of array) { /* código */ }` |
-|   [**Operador Ternário**](9_logicaBooleanaTernario\logicaBooleanaTernario.js)   |                                    Ternário para condições rápidas.                                    |                                                                             `cond ? valor1 : valor2`                                                                              |
-|               [**Valores Nulos**](10_valoresNulos\valoresNulos.js)               |                    Representam a ausência intencional de valor ou referência vazia.                    |                                       `let variavelNula = null;`<br>`let variavelIndefinida = undefined;`<br>`let x; // valor é undefined`                                        |
-|    [**Conversão Automática**](11_conversaoAutomatica\conversãoAutomatica.js)     |               JavaScript converte automaticamente tipos em operações (coerção de tipos).               |                                `"5" + 1 // "51"`<br>`"5" - 1 // 4`<br>`"5" * "2" // 10`<br>`true + 1 // 2`<br>`false + 1 // 1`<br>`null + 5 // 5`                                 |
+|    [**Operador Ternário**](9_logicaBooleanaTernario\logicaBooleanaTernario.js)    |                                    Ternário para condições rápidas.                                    |                                                                             `cond ? valor1 : valor2`                                                                              |
+|               [**Valores Nulos**](10_valoresNulos\valoresNulos.js)                |                    Representam a ausência intencional de valor ou referência vazia.                    |                                       `let variavelNula = null;`<br>`let variavelIndefinida = undefined;`<br>`let x; // valor é undefined`                                        |
+|     [**Conversão Automática**](11_conversaoAutomatica\conversãoAutomatica.js)     |               JavaScript converte automaticamente tipos em operações (coerção de tipos).               |                                `"5" + 1 // "51"`<br>`"5" - 1 // 4`<br>`"5" * "2" // 10`<br>`true + 1 // 2`<br>`false + 1 // 1`<br>`null + 5 // 5`                                 |
 
 <br>
 
@@ -47,13 +47,13 @@
 
 <br>
 
-# Exemplos de Programas 
+# Exemplos de Programas
 
-## Sistemas Operacionais 
+## Sistemas Operacionais
 
 - Fazem o computador funcionar (ex: Windows, macOS).
 
-## Aplicativos 
+## Aplicativos
 
 - Ferramentas que permitem que o usuário realize tarefas específicas, como:
 
@@ -65,15 +65,15 @@
 
 # Exemplos de Software
 
-## Sistemas Operacionais 
+## Sistemas Operacionais
 
 - Windows, macOS, Linux, Android (gerenciam os recursos do hardware).
 
-## Aplicativos/Programas 
+## Aplicativos/Programas
 
 - Navegadores de internet (Chrome, Firefox), editores de texto (Word, Google Docs), jogos, softwares de edição de imagem.
 
-## [Firmware](https://tecnoblog.net/responde/o-que-e-firmware/): 
+## [Firmware](https://tecnoblog.net/responde/o-que-e-firmware/):
 
 - Um tipo específico de software de baixo nível que controla dispositivos de hardware básicos (como a BIOS do computador)
 
@@ -103,7 +103,7 @@
 
 <br>
 
-# Em resumo 
+# Em resumo
 
 - Um programa é um conjunto individual de instruções para uma tarefa.
 
@@ -762,14 +762,14 @@ console.log(pessoaToJson);
 
 <p align="center">
 
-# [Orientação a Objetos](https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects) 
+# [Orientação a Objetos](https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects)
 
 - A orientação a objetos é uma forma de programar, que utiliza os objetos como o seu principal principio;
 - Além de utilizar conceitos e técnicas que envolvem objetos;
 - A maioria dos softwares, na parte de back-end, säo desenvolvidos em cima desse paradigma;
-- Grandes frameworks se aproveitam desta técnica: Laravel, Django e etc. (Adicionar Logo do lavarel e django ) // TODO
+- Grandes frameworks se aproveitam desta técnica: [Laravel](https://laravel.com/), [Django](https://www.djangoproject.com/) e etc.
 
-# [Métodos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Method_definitions) 
+# [Métodos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Method_definitions)
 
 - Propriedades que servem como funções, ou seja as açoes dos objetos,
 - invocamos os métodos das mesmas maneiras que as funções
@@ -804,9 +804,9 @@ pessoa.setNome("Luluzinha");
 console.log(pessoa.getNome());
 ```
 
-- utilizando [getters and setters](https://www.devmedia.com.br/javascript-getters-e-setters/41198) 
+- utilizando [getters and setters](https://www.devmedia.com.br/javascript-getters-e-setters/41198)
 
-# [Prototype](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects/Object_prototypes) 
+# [Prototype](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects/Object_prototypes)
 
 - Um objeto fallback de outro objeto;
 - Quando um objeto recebe uma requisiqäo de uma propriedade que näo tem, ela é procura no prototype deste objeto;
@@ -857,6 +857,24 @@ pastorAlemao.raca = "Pastor Alemão";
 console.log(pastorAlemao.raca);
 ```
 
+- Não podemos adicionar propriedades na classe, somente via PROTOTYPE
+- Classes só aceitam métodos
+
+```js
+class Cachorro {
+  constructor(raca, cor) {
+    this.raca;
+    this.cor;
+  }
+
+  latir() {
+    console.log("Au Au");
+  }
+}
+
+Cachorro.prototype.patas = 4;
+```
+
 # [Construtor por função](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes/constructor)
 
 - Construtores são formas de instanciar uma classe em uma linguagem de programação;
@@ -896,18 +914,259 @@ console.log(husky.raca);
 - Basta definir ao prototype o método desejado;
 
 ```js
-
 function Cachorro(raca) {
   this.raca = raca;
 }
 
-Cachorro.prototype.uivar = function() {
+Cachorro.prototype.uivar = function () {
   console.log("Auuuuuuuuuuuuu");
-}
+};
 
 let pug = new Cachorro("Pug");
 
 console.log(pug.raca);
 pug.uivar();
+```
+
+# Construtor com [ES6](https://www.w3schools.com/js/js_es6.asp)
+
+- O ES6 (ou ECMAScript 2015) foi o divisor de águas para o JavaScript moderno. Ele trouxe recursos que tornaram o código muito mais legível, elegante e "com cara" de linguagem de programação robusta.
+
+```js
+class Cachorro {
+  constructor(raca, patas, cor) {
+    this.raca;
+    this.patas;
+    this.cor;
+  }
+}
+
+let labrador = new Cachorro("Labrador", 4, "Amarelo");
+
+console.log(labrador);
+```
+
+# [Override nas Propriedades do Prototype](https://stackoverflow.com/questions/22060748/overriding-prototype-property-or-function)
+
+- Sempre que adicionamos uma propriedade a um objeto, é criada
+  uma idêntica no Prototype;
+- Podemos substituir a do prototype;
+
+```js
+class Cachorro {
+  constructor(raca) {
+    this.raca;
+  }
+}
+
+let poodle = new Cachorro("Poodle");
+
+Cachorro.prototype.raca = "Sem raça definida";
+
+console.log(poodle.raca);
+console.log(Cachorro.prototype.raca);
+```
+
+# [Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
+
+- Propriedades ünicas, que näo podem ser alteradas e nem criadas duas vezes;
+- Podemos utilizar como uma constante, Sö que para propriedade de objeto;
+
+```js
+class Cachorro {
+  constructor(raca) {
+    this.raca;
+  }
+}
+
+let patas = Symbol();
+
+Cachorro.prototype[patas] = 4;
+
+let golden = new Cachorro("Golden Retriever");
+```
+
+# [Getters](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/get) e [Setters](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/set)
+
+- Método Get e Set
+- Get: serve para resgatar o valor de uma propriedade;
+- Set: serve para alterar o valor de uma propriedade;
+
+```js
+class Cachorro {
+  constructor(raca) {
+    this.raca = raca;
+  }
+
+  get verRaca() {
+    return "A raça é " + this.raca;
+  }
+  set novaRaca(value) {
+    this.raca = value;
+  }
+}
+
+let golden = new Cachorro("Pastor Alemão");
+console.log(golden.verRaca);
+golden.novaRaca = "Golden";
+
+golden.setCor = "Marrom";
+
+console.log(golden.getCor);
+```
+
+# [Herança](https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects/Classes_in_JavaScript)
+
+- Uma classe pode herdar propriedades de outra classe por heranqa;
+  Para isso utilizamos extends;
+
+```js
+class Mamifero {
+  constructor(patas) {
+    this.patas = patas;
+  }
+}
+
+class Cachorro extends Mamifero {
+  constructor(patas, raca) {
+    super(patas, patas);
+    this.raca = raca;
+  }
+}
+
+let pug = new Cachorro(4, "Pug");
+console.log(pug);
+```
+
+## [InstanceOf operator](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/instanceof)
+
+- Podemos verificar quem é o pai do objeto utilizando o instanceOf
+- Usado para um controle melhor do código
+
+```js
+class Mamifero {
+  constructor(patas) {
+    this.patas = patas;
+  }
+}
+
+class Camelo {
+  constructor(patas) {
+    this.patas = patas;
+  }
+}
+
+let coiote = new Mamifero(4);
+console.log(coiote.patas);
+
+class Cachorro extends Mamifero {
+  constructor(patas, raca) {
+    super(patas, patas);
+    this.raca = raca;
+  }
+  latir() {
+    console.log("Au Au");
+  }
+}
+
+let pug = new Cachorro(4, "Pug");
+console.log(pug.patas);
+pug.latir();
+
+console.log(new Cachorro() instanceof Mamifero); // True
+console.log(new Cachorro() instanceof Camelo); // false
+```
+
+# [Debugs e Tratamento de Erros, ou Depuração](https://www.ibm.com/br-pt/think/topics/debugging)
+
+- Os [bugs](https://en.wikipedia.org/wiki/Software_bug) são problemas ou erros no código, pode ser causado pelo programador ou não e impede que o código seja executado da forma correta
+- Os [debugs](https://www.hostgator.com.br/blog/debug-desenvolvimento-web/?gad_source=1&gad_campaignid=22134387764&gbraid=0AAAAAD5rgDa1WUh5CaUy54sZK0IJ0wQt9&gclid=Cj0KCQjwgr_NBhDFARIsAHiUWr5eHxK90dk4pDAmJN6zE-P7AVMvAnP0dJOqKxkWUXOKDGeZlddEJUAaApBNEALw_wcB) são o ato de resolver os bugs no código, debugar seria a forma de resolver os problemas que achamos no código.
+
+# [Strict Mode](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Strict_mode)
+
+- Aumenta a rigorosidade do Java Script tolerando menos erros.
+- Devemos declarar acima das funções.
+- Não impede e nem limita nada no software e ajuda a codar da forma correta.
+
+```js
+"use strict";
+
+opa = 'teste';
+```
+- vai retornar "Uncaught ReferenceError: opa is not definet at window.onload".
 
 ```
+"use strict"
+
+let opa = 'teste';
+
+delete Object.prototype;
+```
+
+- vai retornar "Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }".
+
+# [Console.Log]()
+
+- Serve Basicamente para mostrar valores no console, para visualização = debugar código
+
+```js
+let a = 1;
+let b = 2;
+let c = 3;
+
+if (c > a) {
+  a = b;
+  console.log(a); // 2
+}
+
+for (let i = 5; i > 0; i--) {
+  b++;
+  a = a + c + 1;
+  c += 2;
+  console.log(a); 
+  /*
+  6
+  12
+  20
+  30
+  42
+  */
+}
+
+if (b == a) {
+  a++;
+} else {
+  a = a + b + c;
+}
+
+console.log(a); // 62
+
+a = a * b;
+
+console.log(a); // 434
+```
+
+# [Debbugger](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger)
+
+- Vai fazer com que o código não ultrapasse nenhum erro ao encontrá-lo
+
+```js
+let a = 1;
+let b = 2;
+
+if(a == 1) {
+  a = b +2;
+}
+
+for(i = 0; i <  b; i++) {
+  a = a + 2;
+}
+
+debugger;
+
+if(a > 10) {
+  a == 25;
+}
+
+```
+
