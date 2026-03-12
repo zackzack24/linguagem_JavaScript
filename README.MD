@@ -1091,8 +1091,9 @@ console.log(new Cachorro() instanceof Camelo); // false
 ```js
 "use strict";
 
-opa = 'teste';
+opa = "teste";
 ```
+
 - vai retornar "Uncaught ReferenceError: opa is not definet at window.onload".
 
 ```
@@ -1123,7 +1124,7 @@ for (let i = 5; i > 0; i--) {
   b++;
   a = a + c + 1;
   c += 2;
-  console.log(a); 
+  console.log(a);
   /*
   6
   12
@@ -1151,22 +1152,100 @@ console.log(a); // 434
 - Vai fazer com que o código não ultrapasse nenhum erro ao encontrá-lo
 
 ```js
-let a = 1;
-let b = 2;
+let a = 1; // a = 8
+let b = 2; // b = 2
 
-if(a == 1) {
-  a = b +2;
+if (a == 1) {
+  // a = 8
+  a = b + 2; // b = 2
 }
 
-for(i = 0; i <  b; i++) {
-  a = a + 2;
+for (i = 0; i < b; i++) {
+  // b = 2
+  a = a + 2; // a = 8
 }
 
 debugger;
 
-if(a > 10) {
+if (a > 10) {
   a == 25;
 }
-
 ```
+
+- O debugger é um breakpoint no código, que o faz parar para debugar e nos informar se está tudo dando certo.
+
+# Tratamento de [Input](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input) por função
+
+- Maneira que utilizamos para tratar os dados que recebemos dos usuários, uma vez que não podemos controlar oque o usuário vai nos enviar.
+
+```js
+function checarNumero(valor) {
+  let resultado = Number(valor);
+  if (Number.isNaN(resultado)) {
+    return null;
+  } else {
+    return resultado;
+  }
+}
+
+console.log(checarNumero(5));
+console.log(checarNumero("teste"));
+```
+
+# [Exceptions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
+
+- Criamos erros para abortar o programa ou gerar algum erro.
+- Gera dicas e mensagens sobre o erro criado.
+
+```js
+let a = 1;
+
+if (a != 2) {
+  throw new Error(`O valor de ${a} não pode ser 1`);
+}
+```
+
+# [Try And Catch](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/try...catch)
+
+- Serve para retornar erros no código e geralmente é usado em blocos, e sempre nos mostra com clareza os erros do nosso código e também da linguagem que estamos usando.
+- Muito utilizado em debug
+
+```js
+try {
+  let c = a + b;
+} catch(error) {
+  console.log("Algo Deu Errado: " + error);
+}
+```
+
+# [Finally](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally)
+
+- Usado para executar algo independente do resultado no TryCatch
+- O finally é usado exclusivamente no Try Catch.
+
+```js
+try {
+  let c = a + b;
+} catch(error) {
+  console.log("Algo Deu Errado: " + error);
+} finally {
+  console.log("Executado");
+}
+```
+# [Assertions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Assertions)
+
+- Asseguram que tudo ocorre da forma que esperamos.
+
+```js
+function iterarArray(arr) {
+  if (arr.length == 0) {
+    throw new Error("O array precisa ter elementos");
+  } else {
+    for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+    }
+  }
+}
+```
+
 
