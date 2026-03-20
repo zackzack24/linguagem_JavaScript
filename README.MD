@@ -1213,7 +1213,7 @@ if (a != 2) {
 ```js
 try {
   let c = a + b;
-} catch(error) {
+} catch (error) {
   console.log("Algo Deu Errado: " + error);
 }
 ```
@@ -1226,12 +1226,13 @@ try {
 ```js
 try {
   let c = a + b;
-} catch(error) {
+} catch (error) {
   console.log("Algo Deu Errado: " + error);
 } finally {
   console.log("Executado");
 }
 ```
+
 # [Assertions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Assertions)
 
 - Asseguram que tudo ocorre da forma que esperamos.
@@ -1248,4 +1249,304 @@ function iterarArray(arr) {
 }
 ```
 
+# [Expressões Regulares](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_expressions)
 
+- Também chamadas de Regex (Regular Expression)
+- Usamos para encontrar padrões em strings
+- Alternativa usada para ao invés de criar funções complexas utilizarmos as Expressões Regulares em uma só linha.
+
+## Como criar uma expressão regular:
+
+- Sempre são um tipo de objeto e podem ser instanciadas das seguintes formas:
+- "New RegExp"
+- "/.../"
+- E verificar direto na sentença
+
+```js
+let reg1 = new RegExp("Teste");
+
+let reg = /teste/;
+
+console.log(/quadrado/.test("3343Quadrado42242"));
+// Reg exp      // Oque buscamos
+```
+
+- Sentenças Regulares sempe são [Case Sensitive](https://pt.wikipedia.org/wiki/Case-sensitive)
+
+## Verificar Caracteres usando uma expressão regular:
+
+- Só precisamos colocar entre "[ ]"
+- Se usarmos "-" estamos escolhendo um intervalo.
+
+```js
+console.log(/[123]/.test("123 por aqui")); //true
+console.log(/[1-3]/.test("123 por aqui")); //true
+console.log(/[99]/.test("99 noites")); //true
+console.log(/[99]/.test("1001 noites")); // false
+```
+
+- Usar o método "[ ]", não é muito indicado pois buga faclmente, prefira utilizar o método por intervalo "-".
+
+```js
+const reg1 = /[12345]/;
+
+console.log(reg1.test("Número 6"));
+console.log(reg1.test("Número 25")); // Retorna true mesmo não sendo.
+```
+
+## Verificar [Caracteres Especiais](https://www.rocketseat.com.br/blog/artigos/post/javascript-expressoes-regulares) usando uma expressão regular:
+
+- \d - Qualquer digito de caractere
+- \w - Um caractere alfanumérico ("teste")
+- \s - Qualquer caractere de espaço em branco
+- \D - Caracteres que não são digitos
+- \W - Caractere não-alfanumérico
+- \S - Caractere que não seja espaço em branco
+- "." Qualquer caractere, menos nova linha
+
+```js
+const Regexd = /\d/;
+
+console.log(Regexd.test("abcd")); // false
+console.log(Regexd.test("1234")); // true
+console.log(Regexd.test(" ")); // false
+console.log(Regexd.test("*/+-=%")); // false
+
+const Regexw = /\w/;
+
+console.log(Regexw.test("abcd")); // true
+console.log(Regexw.test("1234")); // true
+console.log(Regexw.test(" ")); // false
+console.log(Regexw.test("*/+-=%")); // false
+
+const Regexs = /\s/;
+
+console.log(Regexs.test("abcd")); // false
+console.log(Regexs.test("1234")); // false
+console.log(Regexs.test(" ")); // true
+console.log(Regexs.test("*/+-=%")); // false
+
+const RegexD = /\D/;
+
+console.log(RegexD.test("abcd")); // true
+console.log(RegexD.test("1234")); // false
+console.log(RegexD.test(" ")); // true
+console.log(RegexD.test("*/+-=%")); // true
+
+const RegexW = /\W/;
+
+console.log(RegexW.test("abcd")); // false
+console.log(RegexW.test("1234")); // false
+console.log(RegexW.test(" ")); // true
+console.log(RegexW.test("*/+-=%")); // true
+
+const RegexS = /\S/;
+
+console.log(RegexS.test("abcd")); // true
+console.log(RegexS.test("1234")); // true
+console.log(RegexS.test(" ")); // false
+console.log(RegexS.test("*/+-=%")); // true
+
+const RegexPonto = /\./;
+
+console.log(RegexPonto.test("abcd")); // false
+console.log(RegexPonto.test("1234")); // false
+console.log(RegexPonto.test(" ")); // false
+console.log(RegexPonto.test("*/+-=%")); // false
+```
+
+- Formas comuns de uso do Regex Com Caracteres Especiais
+
+```js
+let ano = /\d\d\d\d/;
+console.log(ano.test("05")); // false
+console.log(ano.test("2020")); // true
+console.log(ano.test("opa")); // false
+
+let palavraQuatroLetras = /\w\w\w\w/;
+console.log(palavraQuatroLetras.test("Davi")); // true
+console.log(palavraQuatroLetras.test("Chocolate")); // true
+console.log(palavraQuatroLetras.test("Pastel")); // true
+console.log(palavraQuatroLetras.test("1234")); // true
+```
+
+- Perceba que ao definir que queremos 4 dígitos e temos uma palavra com mais de 4 dígitos, o console mostra "true" pois realmente existem 4 dígitos numa string com mais de 4 dígitos. Uma vez que a pesquisa não se preocupa caso haja mais de 4 dígitos.
+
+- Veja como limitar a pesquisa a somente 4 dígitos.
+
+```js
+let palavraQuatroLetras = /\w\w\w\w/;
+console.log(palavraQuatroLetras.test("Davi") && "Davi".length == 4); // true
+console.log(palavraQuatroLetras.test("Chocolate") && "Chocolate".length == 4); // false
+console.log(palavraQuatroLetras.test("Pastel") && "Pastel".length == 4); // false
+console.log(palavraQuatroLetras.test("1234") && "1234".length == 4); // true
+```
+
+- Dessa forma limitamos o tamanho (length) para 4;
+
+## [Operador Plus +](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators)
+
+- Serve para mostrar que um elemento pode se repetir quantas vezes ele quiser.
+
+```js
+let palavraQuatroLetras = /\w+/;
+console.log(palavraQuatroLetras.test("Davi"));
+console.log(palavraQuatroLetras.test("Davi"));
+```
+
+## [Operador Question ?](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators)
+
+- Serve para mostrar que um elemento é opcional.
+
+```js
+let opcional = /Prova\s\d?/;
+console.log(palavraQuatroLetras.test("Prova"));
+console.log(palavraQuatroLetras.test("Teste"));
+
+const padrao = /Abacax?i/;
+
+console.log("Abacaxi"); // true
+console.log("Abacai"); // true
+
+const padrao2 = /\d+\w?/;
+
+console.log(padrao2.test("123")); // true
+console.log(padrao2.test("123abc")); // true
+```
+
+## [Ocorrências Precisas](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators)
+
+- Conhecido como [máscara de entrada](https://dev.to/laurolyra/adicionando-mascaras-nos-inputs-html-js-vanilla-5f1l)
+- Podemos definir onde queremos determinado número ou determinado caractere.
+- Como em um campo que necessita de um cep podemos definir as suas particularidades.
+
+```js
+const cep = /\d{5}-\d{3}/;
+
+console.log(cep.test("12345-531")); // true
+console.log(cep.test("1234214")); // false
+console.log(cep.test("55555555-555")); // true
+console.log(cep.test("Llalala")); // false
+```
+
+## Método Exec
+
+- Retorna o Objeto com as Informações sobre o Regex e retorna null caso não encontre nada
+
+```js
+let teste = /\d+/.exec("O número 10");
+
+console.log(teste);
+console.log(teste.index);
+```
+
+## Método Match
+
+- Semelhante ao exec, usamos para mostrar mais informações
+
+```js
+let teste = /\d+/.match("O número 10");
+
+console.log(teste);
+console.log(teste.index);
+```
+
+## Choice Patterns
+
+- É uma instrução semelhante ao OR (||)
+
+```js
+let frutas = /\d+ (bananas|maças|laranjas)/;
+
+console.log(frutas.test("10 bananas"));
+console.log(frutas.test("2444 maças"));
+console.log(frutas.test("75474 laranjas"));
+```
+
+# Validando um Domínio na Prática
+
+```js
+let validarDominio = /www.\w+\.com|com.br/;
+
+console.log(validarDominio.test("www.google.com"));
+console.log(validarDominio.test("www.teste"));
+console.log(validarDominio.test("teste.com"));
+console.log(validarDominio.test("www.lalalalala.com"));
+console.log(validarDominio.test("banana"));
+console.log(validarDominio.test("java"));
+console.log(validarDominio.test("www.lojalojaloja.com"));
+```
+
+# Validando um Email na Prática
+
+```js
+let validarEmail = /\w+@\w+\.\w+/;
+
+console.log(validarEmail.test("teste@email.com"));
+console.log(validarEmail.test(""));
+console.log(validarEmail.test("aaaaaa"));
+console.log(validarEmail.test("lalalalalalala"));
+console.log(validarEmail.test("q12133@gmail.com"));
+```
+
+# Validando Datas
+
+```js
+let validarDatas = /^[0-9]{2}[/][0-9]{2}[/][0-9]{4}/;
+
+console.log(validarDatas.test("01/02/2025"));
+console.log(validarDatas.test("1/2/25"));
+console.log(validarDatas.test("ab/cd/efgh"));
+console.log(validarDatas.test("01/02/2025"));
+console.log(validarDatas.test("01/02/2025"));
+```
+
+# [Programação Assíncrona ](https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Async_JS/Introducing)
+
+- A programação assíncrona é uma técnica que permite que seu programa inicie uma tarefa potencialmente de longa duração e ainda seja capaz de responder a outros eventos enquanto essa tarefa é executada, em vez de ter que esperar até que essa tarefa seja concluída. Uma vez que essa tarefa tenha terminado, seu programa é apresentado com o resultado.
+
+```js
+const name = "Miriam";
+const greeting = `Hello, my name is ${name}!`;
+console.log(greeting);
+// "Hello, my name is Miriam!"
+```
+
+# [Callbacks ](https://developer.mozilla.org/pt-BR/docs/Glossary/Callback_function)
+
+- Uma função callback é uma função passada a outra função como argumento, que é então invocado dentro da função externa para completar algum tipo de rotina ou ação.
+
+- Aqui está um pequeno exemplo:
+
+```js
+function greeting(name) {
+  alert("Olá " + name);
+}
+
+function processUserInput(callback) {
+  var name = prompt("Por favor insira seu nome.");
+  callback(name);
+}
+
+processUserInput(greeting);
+```
+
+- O exemplo acima é de uma synchronous callback, uma vez que é executada imediatamente.
+- Note, no entanto, que callbacks são normalmente utilizados para continuar a execução do código após uma operação asynchronous ser terminada — essas são chamadas asynchronous callbacks. Um bom exemplo são as funções callback executadas dentro de um bloco .then() encadeado ao final de uma promessa após essa promessa ser cumprida ou rejeitada. Essa estrutura é usada em muitas APIs da web modernas, como a fetch().
+
+# [Promises ](https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Async_JS/Promises)
+
+- Promises são a base da programação assíncrona moderna em JavaScript. Uma promise é um objeto retornado por uma função assíncrona, que representa o estado atual da operação. No momento em que a promise é retornada para quem à chamou, a operação muitas vezes ainda não foi finalizada, mas o objeto da promise oferece métodos para tratar o possível sucesso ou falha da operação.
+- Com esse design, você chama a função assíncrona, passando sua função de callback como parâmetro. A função executa imediatamente e chama seu callback quando a operação é finalizada.
+
+# Falhas nas Promises
+
+- Resolvemos chamando o catch
+
+```js
+let promiseError = Promise.resolve(new Error("Algo Deu Errado"));
+
+promiseError
+  .then((value)  => console.log(value))
+  .catch(reason => console.log("Erro:" + reason));
+```
